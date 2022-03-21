@@ -13,8 +13,9 @@
 </head>
 <body>
     <main>
+        <!-- Sidebar -->
         <div class="sidebar">
-            <img src="img/logo.svg" alt="Spotif logo" id="logo">
+            <img src="img/logo.svg" alt="Spotify logo" id="logo">
             <ul class="sidebar-nav">
                 <li><a href=""><i class="fas fa-home"></i>Home</a></li>
                 <li><a href=""><i class="fas fa-search"></i>Search</a></li>
@@ -23,7 +24,7 @@
             <h3>Playlist</h3>
             <div class="playlist">
                 <ul>
-                    <li><a href=""><i class="fas fa-plus"></i>Create a playlist</a></li>
+                    <li><a href=""><i class="fas fa-plus-square"></i>Create a playlist</a></li>                        
                     <li><a href="">Playlist name</a></li>
                     <li><a href="">Playlist name</a></li>
                     <li><a href="">Playlist name</a></li>
@@ -32,9 +33,22 @@
                     <li><a href="">Playlist name</a></li>
                     <li><a href="">Playlist name</a></li>
                 </ul>
-            </div>
-            
+            </div>            
         </div>
+        <!-- /Sidebar -->
+
+        <!-- Mini-sidebar -->
+        <div class="sidebar-xs">
+            <img src="img/logo-small.svg" alt="small Spotify logo" id="logo-xs">
+            <ul class="sidebar-nav">
+                <li><a href=""><i class="fas fa-home"></i></a></li>
+                <li><a href=""><i class="fas fa-search"></i></a></li>
+                <li><a href=""><i class="fas fa-book"></i></a></li>
+            </ul>           
+        </div>
+        <!-- /Mini-sidebar -->
+
+        <!-- Main -->
         <div class="main">
             <header>
                 <a href="" class="bold">Effettua l' upgrade</a>
@@ -50,6 +64,7 @@
                         <li><a href="">Scopri</a></li>
                     </ul>
                 </nav>
+                <!-- Playlist rows -->
                 <h1>Recently Played</h1>
                 <div class="recently-played">
                     <div class="album-card">
@@ -95,9 +110,11 @@
                         </div>
                     </div>
                 </div>
+                <!-- /Playlist rows -->
 
             </div>
         </div>
+        <!-- /Main -->
     </main>
     <footer>
         <div class="control-left">
