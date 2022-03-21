@@ -13,7 +13,7 @@ img {
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: 100%;
-    font-weight: 600;
+    font-weight: 400;
     color: white;
 }
 
@@ -79,6 +79,14 @@ li i {
     margin: 1rem 0;
 }
 
+.fa-plus {
+    padding: 10px;
+    background-color: #a3a3a3;
+    color: black;
+    width: 50px;
+    height: 50px;
+}
+
 .sidebar a:hover {
     color: white;
 }
@@ -91,8 +99,12 @@ main {
 
 /* Header */
 header{
+    width: calc(100% - 300px);
+    height: 100px;
     line-height: 100px;
     text-align: right;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 header a {
@@ -111,16 +123,57 @@ header a {
 .main-container {
     width: 100%;
     height: calc(100vh - 100px);
-    padding-top: 120px;
+    padding: 120px 2rem 0;
     overflow: auto;
-    background-color: lightcoral;
+    background-color: #141922;
 }
 
-header {
-    width: calc(100% - 300px);;
-    height: 100px;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.3);
+/* main-container: nav */
+nav {
+    text-align: center;
+}
+
+nav li {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* main-container: rows */
+.recently-played {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.album-card {
+    margin: 2rem 1rem 2rem 0;
+}
+
+.sub-cover {
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .recently-played {
+        flex-wrap: wrap;
+    }
+    
+    .album-card {
+        max-width: 20%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .recently-played {
+        flex-wrap: wrap;
+    }
+    
+    .album-card {
+        max-width: 45%;
+    }
 }
 
 /* FOOTER */
