@@ -13,7 +13,7 @@ img {
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: 100%;
-    font-weight: 400;
+    font-weight: 600;
     color: white;
 }
 
@@ -22,12 +22,65 @@ a {
     color: inherit;
 }
 
+li {
+    list-style: none;
+}
+
 .color-grey {
     color: #b8b8b8;
 }
 
 .bold {
     font-weight: 600;
+}
+
+/* sidebar */
+.sidebar {
+    width: 300px;
+    height: calc(100vh - 100px);
+    background-color: black;
+}
+
+.sidebar h3 {
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+
+#logo {
+    width: auto;
+    height: 50px;
+    margin: 1rem;
+}
+
+.sidebar-nav {
+    margin-bottom: 1rem;
+}
+
+.sidebar-nav li:first-child {
+    border-left: 3px solid #a2ee2e;
+}
+
+li {
+    color: #a3a3a3;
+    line-height: 2rem;
+    padding-left: 1rem;
+}
+
+li i {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.playlist {
+    overflow-y: auto;
+    height: calc(100vh - 21rem);}
+
+.playlist li {
+    margin: 1rem 0;
+}
+
+.sidebar a:hover {
+    color: white;
 }
 
 /* MAIN */
@@ -48,13 +101,6 @@ header a {
     border: 1px solid white;
     border-radius: 30px;
     margin-right: 1rem;
-}
-
-/* sidebar */
-.sidebar {
-    width: 300px;
-    height: calc(100vh - 100px);
-    background-color: lightslategray;
 }
 
 /* main-container */
