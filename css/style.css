@@ -34,13 +34,20 @@ li {
     font-weight: 600;
 }
 
-/* sidebar */
+.container {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* SIDEBAR */
 .sidebar {
     width: 225px;
     height: calc(100vh - 100px);
     background-color: black;
     color: #6F6F6F;
     overflow: hidden;
+    float: left;
 }
 
 .sidebar-xs {
@@ -50,6 +57,7 @@ li {
     color: #6F6F6F;
     display: none;
     overflow: hidden;
+    float: left;
 }
 
 .sidebar-xs #logo-xs {
@@ -123,7 +131,7 @@ li i {
 /* MAIN */
 /* common */
 main {
-    display: flex;
+    float: left;
 }
 
 /* Header */
@@ -133,6 +141,8 @@ header{
     line-height: 100px;
     text-align: right;
     position: fixed;
+    top: 0;
+    right: 0;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
