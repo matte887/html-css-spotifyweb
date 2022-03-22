@@ -150,6 +150,10 @@ li img {
     color: white;
 }
 
+a:hover img {
+    filter: invert(0);
+}
+
 /* test */
 .sidebar-top {
     height: calc(100% - 100px);
@@ -164,7 +168,7 @@ li img {
     padding: 1rem;
 }
 
-#download {
+.download {
     width: 20px;
     filter: invert(.5);
 }
