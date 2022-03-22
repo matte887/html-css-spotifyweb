@@ -275,6 +275,14 @@ nav a:hover {
     margin: 1rem 0;    
 }
 
+.album-card:hover img{
+    filter: brightness(30%);
+}
+
+.recently-played .fa-play-circle {
+    position: absolute;
+}
+
 @media screen and (max-width: 1100px) {
     .recently-played {
         flex-wrap: wrap;
