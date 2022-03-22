@@ -60,6 +60,13 @@ li {
     float: left;
 }
 
+.sidebar-xs-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .sidebar-xs #logo-xs {
     width: 2rem;
 }
@@ -305,6 +312,18 @@ nav a:hover {
 
     header{
         width: calc(100% - 60px);
+    }
+
+    #username::before {
+        display: none;
+    }
+
+    #username {
+        margin-top: 1rem;
+    }
+
+    #download {
+        margin-right: 3px;
     }
 }
 
