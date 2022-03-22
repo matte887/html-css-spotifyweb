@@ -99,7 +99,7 @@ li {
     color: white;
 }
 
-li {
+.sidebar li {
     color: #6F6F6F;
     line-height: 2rem;
     padding-left: 1rem;
@@ -266,6 +266,8 @@ nav {
 nav li {
     text-transform: uppercase;
     display: inline-block;
+    color: #6F6F6F;
+    padding-left: 2rem;
 }
 
 nav a:hover {
