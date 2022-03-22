@@ -17,6 +17,10 @@ html {
     color: white;
 }
 
+body {
+    min-width: 594px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -40,7 +44,8 @@ li {
     clear: both;
 }
 
-/* SIDEBAR */
+/* MAIN */
+/* Sidebar */
 .sidebar {
     width: 225px;
     height: calc(100vh - 100px);
@@ -50,31 +55,17 @@ li {
     float: left;
 }
 
-.sidebar-xs {
-    width: 60px;
-    height: calc(100vh - 100px);
-    background-color: black;
-    color: #6F6F6F;
-    display: none;
+.sidebar-top {
+    height: calc(100% - 100px);
+    min-height: 350px;
     overflow: hidden;
-    float: left;
-}
-
-.sidebar-xs-container {
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-.sidebar-xs #logo-xs {
-    width: 2rem;
-}
-
-.sidebar h3 {
-    text-transform: uppercase;
-    margin-top: 2rem;
-    color: white;
+.sidebar-bottom {
+    height: 100px;
+    padding: 1rem;
 }
 
 #logo {
@@ -89,21 +80,29 @@ li {
 
 .sidebar-nav img {
     filter: invert(.5);
+    vertical-align: middle;
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.sidebar-nav span {
+    vertical-align: middle;
 }
 
 .sidebar .sidebar-nav li:first-child {
     border-left: 3px solid #a2ee2e;
 }
 
+.sidebar h3 {
+    text-transform: uppercase;
+    margin-top: 2rem;
+    color: white;
+}
+
 li {
     color: #6F6F6F;
     line-height: 2rem;
     padding-left: 1rem;
-}
-
-li img {
-    width: 2rem;
-    margin-right: 1rem;
 }
 
 .playlist {
@@ -154,20 +153,6 @@ a:hover img {
     filter: invert(0);
 }
 
-/* test */
-.sidebar-top {
-    height: calc(100% - 100px);
-    min-height: 350px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar-bottom {
-    height: 100px;
-    padding: 1rem;
-}
-
 .download {
     width: 20px;
     filter: invert(.5);
@@ -184,6 +169,7 @@ a:hover img {
 /* Sidebar-bottom */
 .sidebar-bottom img {
     margin-right: 1rem;
+    vertical-align: middle;
 }
 
 #username {
@@ -201,7 +187,28 @@ a:hover img {
     display: block;
 }
 
-/* MAIN */
+.sidebar-xs {
+    width: 60px;
+    height: calc(100vh - 100px);
+    background-color: black;
+    color: #6F6F6F;
+    display: none;
+    overflow: hidden;
+    float: left;
+}
+
+.sidebar-xs-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-xs #logo-xs {
+    width: 2rem;
+}
+
+/* Main container*/
 /* common */
 main {
     float: left;
@@ -224,7 +231,15 @@ header a {
     padding: 1rem 2rem;
     border: 1px solid white;
     border-radius: 30px;
-    margin-right: 1rem;
+    margin-right: 3rem;
+}
+
+.cta-button {
+    display: inline-block;
+}
+
+header .cta-button:hover {
+    transform: scale(120%);
 }
 
 /* main-container */
@@ -266,6 +281,8 @@ nav a:hover {
 .album-card {
     margin: 2rem 1rem 2rem 0;
     position: relative;
+    /* da eliminare */
+    /* max-width: 262px; */
 }
 
 .sub-cover {
@@ -280,13 +297,12 @@ nav a:hover {
     filter: brightness(30%);
 }
 
-
 .recently-played .fa-play-circle {
     font-size: 5rem;
     position: absolute;
-    top: 38%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
     display: none;
 }
 
