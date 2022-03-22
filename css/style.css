@@ -40,6 +40,7 @@ li {
     height: calc(100vh - 100px);
     background-color: black;
     color: #6F6F6F;
+    overflow: hidden;
 }
 
 .sidebar-xs {
@@ -48,6 +49,7 @@ li {
     background-color: black;
     color: #6F6F6F;
     display: none;
+    overflow: hidden;
 }
 
 .sidebar-xs #logo-xs {
@@ -145,6 +147,8 @@ header a {
 /* main-container */
 .main {
     width: calc(100% - 225px);
+    height: calc(100vh - 100px);
+    overflow: hidden;
 }
 
 .main-container {
