@@ -66,7 +66,6 @@ li {
 
 .sidebar h3 {
     text-transform: uppercase;
-    padding-left: 1rem;
     margin-top: 2rem;
     color: white;
 }
@@ -79,6 +78,7 @@ li {
 
 .sidebar-nav {
     margin-bottom: 1rem;
+    /* height: 110px; */
 }
 
 .sidebar .sidebar-nav li:first-child {
@@ -97,11 +97,16 @@ li img {
 }
 
 .playlist {
+    flex-grow: 1;
     overflow-y: auto;
-    height: calc(100vh - 21rem);
 }
 
-.playlist h4 {
+.playlist ul {
+    overflow-y: auto;
+}
+
+.sidebar h4, 
+.sidebar h3 {
     margin: 1rem 1rem;
 }
 
@@ -111,6 +116,24 @@ li img {
 
 .sidebar a:hover {
     color: white;
+}
+
+/* test */
+.sidebar-top {
+    height: calc(100% - 100px);
+    min-height: 350px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-bottom {
+    height: 100px;
+}
+
+/* Sidebar-bottom */
+.sidebar-bottom img {
+    width: 2rem;
 }
 
 /* MAIN */
