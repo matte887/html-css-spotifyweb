@@ -56,6 +56,12 @@ li {
     float: left;
 }
 
+@media screen and (max-width:599px) {
+    .sidebar {
+        display: none;  
+    }
+}
+
 .sidebar-top {
     height: calc(100% - 100px);
     min-height: 350px;
@@ -170,6 +176,12 @@ a:hover img {
     filter: invert(.5);
 }
 
+@media screen and (max-width:599px) {
+    .download {
+        margin-right: 3px;
+    }
+}
+
 #user {
     width: 2rem;
     height: 2rem;
@@ -199,6 +211,17 @@ a:hover img {
     display: block;
 }
 
+@media screen and (max-width:599px) {
+    #username::before {
+        display: none;
+    }
+
+    #username {
+        margin-top: 1rem;
+    }
+}
+
+/* Sidebar xs */
 .sidebar-xs {
     width: 60px;
     height: calc(100vh - 100px);
@@ -207,6 +230,18 @@ a:hover img {
     display: none;
     overflow: hidden;
     float: left;
+}
+
+@media screen and (max-width:599px) {
+    .sidebar-xs {
+        display: block;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .sidebar-xs li {
+        margin: 1rem 0;
+    }
 }
 
 .sidebar-xs-container {
@@ -229,6 +264,12 @@ a:hover img {
     float: left;
 }
 
+@media screen and (max-width:599px) {
+    .main {
+        width: calc(100% - 60px);
+    }
+}
+
 .main-container {
     width: 100%;
     height: calc(100vh - 100px);
@@ -248,6 +289,12 @@ header {
     right: 0;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
+}
+
+@media screen and (max-width:599px) {
+    header {
+        width: calc(100% - 60px);
+    }
 }
 
 header a {
@@ -317,6 +364,12 @@ nav a:hover {
     }
 }
 
+@media screen and (max-width: 700px) {
+    .album-row {
+        flex-wrap: wrap;
+    }
+}
+
 .album-card {
     margin: 2rem 1rem 2rem 0;
     width: calc(100% / 6);
@@ -326,6 +379,12 @@ nav a:hover {
     .album-card {
         width: calc(100% / 4 - 1rem);
         margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px) {    
+    .album-card {
+        width: calc(100% / 2 - 1rem);
     }
 }
 
@@ -366,53 +425,6 @@ nav a:hover {
 
 .album-image:hover .fa-play-circle {
     display: block;
-}
-
-
-@media screen and (max-width: 700px) {
-    .album-row {
-        flex-wrap: wrap;
-    }
-    
-    .album-card {
-        width: calc(100% / 2 - 1rem);
-    }
-}
-
-@media screen and (max-width:599px) {
-    .sidebar {
-        display: none;  
-    }
-
-    .sidebar-xs {
-        display: block;
-        text-align: center;
-        padding: 1rem 0;
-    }
-
-    .sidebar-xs li {
-        margin: 1rem 0;
-    }
-
-    .main {
-        width: calc(100% - 60px);
-    }
-
-    header {
-        width: calc(100% - 60px);
-    }
-
-    #username::before {
-        display: none;
-    }
-
-    #username {
-        margin-top: 1rem;
-    }
-
-    .download {
-        margin-right: 3px;
-    }
 }
 
 /* FOOTER */
