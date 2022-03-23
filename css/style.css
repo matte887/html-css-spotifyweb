@@ -171,7 +171,7 @@ a:hover img {
     }
 }
 
-#user {
+.user {
     display: inline-block;
     width: 2rem;
     height: 2rem;
@@ -185,13 +185,13 @@ a:hover img {
     vertical-align: middle;
 }
 
-#username {
+.username {
     font-size: 1.2rem;
     color: white;
     font-weight: 600;
 }
 
-#username::before {
+.sidebar .username::before {
     display: block;
     content: "";
     width: 100%;
@@ -242,6 +242,10 @@ a:hover img {
 
 .sidebar-xs #logo-xs {
     width: 2rem;
+}
+
+.sidebar-xs .download {
+    margin-bottom: 1rem;
 }
 
 /* MAIN*/
