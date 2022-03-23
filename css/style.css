@@ -244,13 +244,11 @@ header a {
     border: 1px solid white;
     border-radius: 30px;
     margin-right: 3rem;
-}
-
-.cta-button {
     display: inline-block;
+    line-height: normal;
 }
 
-header .cta-button:hover {
+header a:hover {
     transform: scale(120%);
 }
 
@@ -419,7 +417,7 @@ footer i {
 .control-left,
 .control-center,
 .control-right {
-    height: inherit; /*questa serve?*/
+    height: 100%;
 }
 
 .control-left,
@@ -429,7 +427,6 @@ footer i {
 }
 
 .control-center {
-    /* min-width: 12rem; */
     width: 40%;
 }
 
