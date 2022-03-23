@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    min-width: 594px;
+    min-width: 525px;
 }
 
 a {
@@ -451,6 +451,12 @@ footer i {
     width: 40%;
 }
 
+@media screen and (max-width:599px) {
+    .control-center {
+        width: 30%;
+    }
+}
+
 .control-right {
     justify-content: flex-end;
 }
@@ -509,6 +515,12 @@ footer .control-left span {
     padding-left: 2rem;
 }
 
+@media screen and (max-width:599px) {
+    .footer-l-icons {
+        padding-left: 0rem;
+    }
+}
+
 .footer-l-icons i {
     padding: 0 .3rem;
 }
@@ -525,6 +537,12 @@ footer .control-left span {
 
 .footer-center-icons i {
     padding: 0 1rem;
+}
+
+@media screen and (max-width:599px) {
+    .footer-center-icons i {
+        font-size: 1.1rem;
+    }
 }
 
 .fa-play-circle {
