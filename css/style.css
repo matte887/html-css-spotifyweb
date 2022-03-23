@@ -282,9 +282,11 @@ nav a:hover {
 
 .album-card {
     margin: 2rem 1rem 2rem 0;
+    width: calc(100% / 6);
+}
+
+.album-image {
     position: relative;
-    /* da eliminare */
-    /* max-width: 262px; */
 }
 
 .sub-cover {
@@ -295,8 +297,9 @@ nav a:hover {
     margin: 1rem 0;    
 }
 
-.album-card:hover img {
+.album-image:hover img {
     filter: brightness(30%);
+    cursor: pointer;
 }
 
 .recently-played .fa-play-circle {
@@ -304,11 +307,11 @@ nav a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -50%);
     display: none;
 }
 
-.album-card:hover .fa-play-circle {
+.album-image:hover .fa-play-circle {
     display: block;
 }
 
@@ -318,7 +321,8 @@ nav a:hover {
     }
     
     .album-card {
-        max-width: 21%;
+        width: calc(100% / 4 - 1rem);
+        margin-bottom: 1rem;
     }
 }
 
@@ -328,7 +332,7 @@ nav a:hover {
     }
     
     .album-card {
-        max-width: 45%;
+        width: calc(100% / 2 - 1rem);
     }
 }
 
