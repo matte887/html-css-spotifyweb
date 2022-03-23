@@ -48,12 +48,12 @@ li {
 /* MAIN */
 /* Sidebar */
 .sidebar {
+    float: left;
     width: 225px;
     height: calc(100vh - 100px);
     background-color: black;
     color: #6F6F6F;
     overflow: hidden;
-    float: left;
 }
 
 @media screen and (max-width:599px) {
@@ -63,11 +63,11 @@ li {
 }
 
 .sidebar-top {
+    display: flex;
+    flex-direction: column;
     height: calc(100% - 100px);
     min-height: 350px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
 }
 
 .sidebar-bottom {
@@ -81,20 +81,11 @@ li {
     margin: 1rem auto;
 }
 
-.sidebar-nav {
-    margin-bottom: 1rem;
-}
-
 .sidebar-nav img {
     filter: invert(.5);
     vertical-align: middle;
     width: 2rem;
     margin-right: 1rem;
-}
-
-.sidebar .search,
-.sidebar .libraries {
-    border-left: 3px solid transparent;
 }
 
 @media screen and (max-width:599px) {
@@ -111,25 +102,15 @@ li {
     border-left: 3px solid #a2ee2e;
 }
 
+.sidebar .search,
+.sidebar .libraries {
+    border-left: 3px solid transparent;
+}
+
 .sidebar h3 {
     text-transform: uppercase;
     margin-top: 2rem;
     color: white;
-}
-
-.sidebar li {
-    color: #6F6F6F;
-    line-height: 2rem;
-    padding-left: 1rem;
-}
-
-.playlist {
-    flex-grow: 1;
-    overflow-y: auto;
-}
-
-.playlist ul {
-    overflow-y: auto;
 }
 
 .sidebar h4, 
@@ -138,17 +119,21 @@ li {
 }
 
 .sidebar #plus {
+    display: inline-block;
     font-size: 3rem;
     font-weight: 600;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
     text-align: center;
     vertical-align: middle;
     line-height: 30px;
     color: black;
-    background-color: #6F6F6F;
+    width: 30px;
+    height: 30px;
     margin-right: 1rem;
+    background-color: #6F6F6F;
+}
+
+.sidebar a:hover {
+    color: white;
 }
 
 .new-playlist:hover #plus {
@@ -159,12 +144,16 @@ li {
     cursor: pointer;
 }
 
-.playlist li {
+.sidebar li {
+    color: #6F6F6F;
+    line-height: 2rem;
+    padding-left: 1rem;
     margin: 1rem 0;
 }
 
-.sidebar a:hover {
-    color: white;
+.playlist {
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 a:hover img {
@@ -183,11 +172,11 @@ a:hover img {
 }
 
 #user {
+    display: inline-block;
     width: 2rem;
     height: 2rem;
-    background-color: #6F6F6F;
     border-radius: 50%;
-    display: inline-block;
+    background-color: #6F6F6F;
 }
 
 /* Sidebar-bottom */
@@ -203,12 +192,12 @@ a:hover img {
 }
 
 #username::before {
+    display: block;
+    content: "";
     width: 100%;
     height: 1px;
-    background-color: #6F6F6F;
     margin: 1rem auto;
-    content: "";
-    display: block;
+    background-color: #6F6F6F;
 }
 
 @media screen and (max-width:599px) {
@@ -223,13 +212,13 @@ a:hover img {
 
 /* Sidebar xs */
 .sidebar-xs {
+    display: none;
+    float: left;
     width: 60px;
     height: calc(100vh - 100px);
-    background-color: black;
-    color: #6F6F6F;
-    display: none;
     overflow: hidden;
-    float: left;
+    color: #6F6F6F;
+    background-color: black;
 }
 
 @media screen and (max-width:599px) {
@@ -238,7 +227,7 @@ a:hover img {
         text-align: center;
         padding: 1rem 0;
     }
-
+    
     .sidebar-xs li {
         margin: 1rem 0;
     }
@@ -258,10 +247,10 @@ a:hover img {
 /* MAIN*/
 /* Main container: structure */
 .main {
+    float: left;
     width: calc(100% - 225px);
     height: calc(100vh - 100px);
     overflow: hidden;
-    float: left;
 }
 
 @media screen and (max-width:599px) {
@@ -280,15 +269,15 @@ a:hover img {
 
 /* Main container: header */
 header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
     width: calc(100% - 225px);
     height: 100px;
     line-height: 100px;
     text-align: right;
-    position: fixed;
-    top: 0;
-    right: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
 }
 
 @media screen and (max-width:599px) {
@@ -298,12 +287,12 @@ header {
 }
 
 header a {
+    display: inline-block;
     text-transform: uppercase;
     padding: 1rem 2rem;
     border: 1px solid white;
     border-radius: 30px;
     margin-right: 3rem;
-    display: inline-block;
     line-height: normal;
 }
 
@@ -322,6 +311,7 @@ nav li {
     display: inline-block;
     color: #6F6F6F;
     padding-left: 2rem;
+    margin-bottom: 1rem;
 }
 
 nav a:hover {
@@ -396,6 +386,24 @@ nav a:hover {
     display: block;
 }
 
+.album-image:hover img {
+    filter: brightness(30%);
+    cursor: pointer;
+}
+
+.album-row .fa-play-circle {
+    position: absolute;
+    font-size: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.album-image:hover .fa-play-circle {
+    display: block;
+}
+
 .album-image.circle {
     border-radius: 50%;
     overflow: hidden;
@@ -409,30 +417,12 @@ nav a:hover {
     margin: 1rem 0;    
 }
 
-.album-image:hover img {
-    filter: brightness(30%);
-    cursor: pointer;
-}
-
-.album-row .fa-play-circle {
-    font-size: 4rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-}
-
-.album-image:hover .fa-play-circle {
-    display: block;
-}
-
 /* FOOTER */
 /* main structure */
 footer {
+    display: flex;
     width: 100%;
     height: 100px;
-    display: flex;
     justify-content: space-between;
     background-color: #282828;
 }
@@ -464,21 +454,13 @@ footer i {
 /* Internal layout: common */
 .dot {
     display: none;
-    width: 14px;
-    height: 14px;
-    background-color: white;
-    border-radius: 50%;
     position: absolute;
     top: -5px;
     right: -10px;
-}
-
-.bar:hover .dot {
-    display: block;
-}
-
-.bar:hover .green-bar {
-    background-color: #a2ee2e;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
 }
 
 .bar {
@@ -494,6 +476,14 @@ footer i {
     border-radius: 2px;
     background-color: #b8b8b8;
     position: relative;
+}
+
+.bar:hover .dot {
+    display: block;
+}
+
+.bar:hover .green-bar {
+    background-color: #a2ee2e;
 }
 
 footer a.color-grey:hover {
@@ -521,11 +511,11 @@ footer .control-left span {
 
 /* Internal layout: center */
 .footer-center-icons {
-    width: 100%;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 50px;
     padding-top: 1rem;
 }
 
@@ -535,17 +525,15 @@ footer .control-left span {
 
 .fa-play-circle {
     font-size: 3rem;
-    cursor: pointer;
 }
 
 .progress-container {
-    width: 100%;
-    height: 50px;
-    /* font-size: .7rem; */
-    font-weight: 600;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 50px;
+    font-weight: 600;
     padding-bottom: 1rem;
 }
 
