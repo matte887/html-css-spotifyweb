@@ -226,7 +226,7 @@ main {
 }
 
 /* Header */
-header{
+header {
     width: calc(100% - 225px);
     height: 100px;
     line-height: 100px;
@@ -282,6 +282,12 @@ nav li {
 
 nav a:hover {
     color: white;
+}
+
+.active:after {
+    width: 100px;
+    height: 100px;
+    background-color: white;
 }
 
 /* main-container: rows */
@@ -436,6 +442,7 @@ footer i {
 
 /* Internal structure: common */
 .dot {
+    display: none;
     width: 14px;
     height: 14px;
     background-color: white;
@@ -445,10 +452,19 @@ footer i {
     right: -10px;
 }
 
+.bar:hover .dot {
+    display: block;
+}
+
+.bar:hover .green-bar {
+    background-color: #a2ee2e;
+}
+
 .bar {
     height: 4px;
     border-radius: 2px;
     background-color: #6F6F6F;
+    cursor: pointer;
 }
 
 .green-bar {
@@ -457,6 +473,10 @@ footer i {
     border-radius: 2px;
     background-color: #b8b8b8;
     position: relative;
+}
+
+footer a.color-grey:hover {
+    color: white;
 }
 
 /* Internal layout: left */
@@ -494,7 +514,7 @@ footer .control-left span {
 }
 
 .fa-play-circle {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .progress-container {
@@ -520,4 +540,8 @@ footer .control-left span {
 .control-right .bar {
     width: 80px;
     margin-right: 1rem;
+}
+
+.fa-volume-up {
+    color: #b8b8b8;
 }
