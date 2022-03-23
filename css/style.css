@@ -284,10 +284,19 @@ nav a:hover {
     color: white;
 }
 
-.active:after {
-    width: 100px;
-    height: 100px;
-    background-color: white;
+#active::after {
+    width: 35px;
+    height: 3px;
+    background-color: #a2ee2e;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: -8px;
+    left: 53px;
+}
+
+.main-container nav ul li:first-child {
+    position: relative;
 }
 
 /* main-container: rows */
