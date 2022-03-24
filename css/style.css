@@ -470,17 +470,6 @@ footer i {
 }
 
 /* Internal layout: common */
-.dot {
-    display: none;
-    position: absolute;
-    top: -5px;
-    right: -10px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color: white;
-}
-
 .bar {
     height: 4px;
     border-radius: 2px;
@@ -494,6 +483,17 @@ footer i {
     border-radius: 2px;
     background-color: #b8b8b8;
     position: relative;
+}
+
+.dot {
+    display: none;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
 }
 
 .bar:hover .dot {
