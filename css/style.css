@@ -2,6 +2,8 @@
 :root {
     /* Box sizes */
     --header-height: 100px;
+    --sidebar-width: 225px;
+    --sidebar-xs-width: 60px;
     --footer-height: 100px;
 
     /* Colors */
@@ -71,7 +73,7 @@ li {
 /* Sidebar */
 .sidebar {
     float: left;
-    width: 225px;
+    width: var(--sidebar-width);
     height: calc(100vh - var(--footer-height));
     background-color: var(--sidebar-color);
     color: var(--light-grey);
@@ -237,7 +239,7 @@ a:hover img {
 .sidebar-xs {
     display: none;
     float: left;
-    width: 60px;
+    width: var(--sidebar-xs-width);
     height: calc(100vh - var(--footer-height));
     overflow: hidden;
     color: var(--light-grey);
@@ -275,14 +277,14 @@ a:hover img {
 /* Main container: structure */
 .main {
     float: left;
-    width: calc(100% - 225px);
+    width: calc(100% - var(--sidebar-width));
     height: calc(100vh - var(--footer-height));
     overflow: hidden;
 }
 
 @media screen and (max-width:599px) {
     .main {
-        width: calc(100% - 60px);
+        width: calc(100% - var(--sidebar-xs-width));
     }
 }
 
@@ -300,7 +302,7 @@ header {
     top: 0;
     right: 0;
     z-index: 1;
-    width: calc(100% - 225px);
+    width: calc(100% - var(--sidebar-width));
     height: var(--header-height);
     line-height: 100px;
     text-align: right;
@@ -309,7 +311,7 @@ header {
 
 @media screen and (max-width:599px) {
     header {
-        width: calc(100% - 60px);
+        width: calc(100% - var(--sidebar-xs-width));
     }
 }
 
