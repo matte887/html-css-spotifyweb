@@ -69,7 +69,7 @@ li {
 }
 
 /* MAIN */
-/* Sidebar */
+/* Sidebar: structure */
 .sidebar {
     float: left;
     width: var(--sidebar-width);
@@ -98,6 +98,7 @@ li {
     padding: 1rem;
 }
 
+/* Sidebar-top: content */
 #logo {
     width: auto;
     height: 50px;
@@ -143,6 +144,7 @@ li {
 
 #plus::before {
     display: inline-block;
+    content: "+";
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
@@ -153,7 +155,6 @@ li {
     height: 30px;
     margin-right: 1rem;
     background-color: var(--light-grey);
-    content: "+";
 }
 
 .sidebar a:hover {
@@ -184,6 +185,12 @@ a:hover img {
     filter: invert(0);
 }
 
+/* Sidebar-bottom */
+.sidebar-bottom img {
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
 .download {
     width: 20px;
     filter: invert(.5);
@@ -201,12 +208,6 @@ a:hover img {
     height: 2rem;
     border-radius: 50%;
     background-color: var(--light-grey);
-}
-
-/* Sidebar-bottom */
-.sidebar-bottom img {
-    margin-right: 1rem;
-    vertical-align: middle;
 }
 
 .username {

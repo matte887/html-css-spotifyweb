@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- /Google Fonts -->
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /Font Awesome -->
     
     <title>Spotify</title>
 </head>
+
 <body>
     <main>
         <div class="container">
@@ -34,6 +40,7 @@
                             <a href=""><img src="img/libreria.svg" alt="Libraries" class="libraries"><span>Your libraries</span></a>
                         </li>
                     </ul>
+
                     <h3>Playlist</h3>
                     <a class="new-playlist">
                         <h4 id="plus">Create a playlist</h4>
@@ -57,7 +64,7 @@
                     <p><a href=""><img src="img/download.svg" alt="Download" class="download">Download app</a></p>
                     <p class="username bold"><a href=""><img src="img/profile.svg" alt="User avatar" class="user">John Doe</a></p>
                 </div>      
-                <!-- /Sidebar: bottom     -->
+                <!-- /Sidebar: bottom -->
             </div>
             <!-- /Sidebar -->
 
@@ -68,9 +75,15 @@
                     <div class="sidebar-xs-top">
                         <img src="img/logo-small.svg" alt="small Spotify logo" id="logo-xs">
                         <ul class="sidebar-nav">
-                            <li><a href=""><img src="img/home.svg" alt="Return to home"></a></li>
-                            <li><a href=""><img src="img/search.svg" alt="Search"></a></li>
-                            <li><a href=""><img src="img/libreria.svg" alt="Libraries"></a></li>
+                            <li>
+                                <a href=""><img src="img/home.svg" alt="Return to home"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="img/search.svg" alt="Search"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="img/libreria.svg" alt="Libraries"></a>
+                            </li>
                         </ul>  
                     </div>
                     <!-- /Sidebar-xs: top -->
@@ -112,8 +125,8 @@
 
                     <!-- Playlist row: 1 -->
                     <h1>Recently Played</h1>
-                    <div class="album-row">
-                        <div class="album-card">
+                    <ul class="album-row">
+                        <li class="album-card">
                             <div class="album-image">
                                 <img src="img/metal_lifting.jpg" alt="Metal albums">
                                 <i class="far fa-play-circle"></i>
@@ -122,8 +135,8 @@
                                 <h3>Heavy metal</h3>
                                 <span class="color-grey">Subtitle</span>
                             </div>
-                        </div>
-                        <div class="album-card">
+                        </li>
+                        <li class="album-card">
                             <div class="album-image">
                                 <img src="img/stranger.jpeg" alt="Stranger things Soundtrack">
                                 <i class="far fa-play-circle"></i>
@@ -132,8 +145,8 @@
                                 <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                                 <span class="color-grey">Kyle Dixon & Michael Stein</span>
                             </div>
-                        </div>
-                        <div class="album-card">
+                        </li>
+                        <li class="album-card">
                             <div class="album-image">
                                 <img src="img/aquietplace.jpeg" alt="A quiet place">
                                 <i class="far fa-play-circle"></i>
@@ -142,8 +155,8 @@
                                 <h3>A quiet place</h3>
                                 <span class="color-grey">Subtitle</span>
                             </div>
-                        </div>
-                        <div class="album-card">
+                        </li>
+                        <li class="album-card">
                             <div class="album-image">
                                 <img src="img/split.jpeg" alt="Split">
                                 <i class="far fa-play-circle"></i>
@@ -152,8 +165,8 @@
                                 <h3>Split</h3>
                                 <span class="color-grey">Subtitle</span>
                             </div>
-                        </div>
-                        <div class="album-card">
+                        </li>
+                        <li class="album-card">
                             <div class="album-image">
                                 <img src="img/cure.jpeg" alt="Cure">
                                 <i class="far fa-play-circle"></i>
@@ -162,8 +175,8 @@
                                 <h3>A cure for wellness</h3>
                                 <span class="color-grey">Subtitle</span>
                             </div>
-                        </div>
-                        <div class="album-card">
+                        </li>
+                        <li class="album-card">
                             <div class="album-image">
                                 <img src="img/sinister.jpeg" alt="Sinister">
                                 <i class="far fa-play-circle"></i>
@@ -172,15 +185,16 @@
                                 <h3>Sinister</h3>
                                 <span class="color-grey">Subtitle</span>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                     <!-- /Playlist row: 1 -->
 
                     <!-- Playlist row: 2 -->
                     <h1>Creato per John Doe</h1>
                     <p class="subtitle color-grey bold">Più ascolti, più accurati saranno i suggerimenti.</p>
-                    <div class="album-row">
-                        <div class="album-card">
+
+                    <ul class="album-row">
+                        <li class="album-card">
                             <div class="album-image">
                                 <img src="img/radar.jpeg" alt="Release Radar">
                                 <i class="far fa-play-circle"></i>
@@ -188,8 +202,8 @@
                             <div class="sub-cover">
                                 <h3>Release Radar</h3>
                             </div>
-                        </div>
-                        <div class="album-card">
+                        </li>
+                        <li class="album-card">
                             <div class="album-image">
                                 <img src="img/mixdaily.jpeg" alt="You daily mix">
                                 <i class="far fa-play-circle"></i>
@@ -197,15 +211,16 @@
                             <div class="sub-cover">
                                 <h3>Daily Mix 1</h3>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                     <!-- /Playlist row: 2 -->
 
                     <!-- Playlist row: 3 -->
                     <h1>Artisti più popolari</h1>
                     <p class="subtitle color-grey bold">Più ascolti, più accurati saranno i suggerimenti.</p>
-                    <div class="album-row">
-                        <div class="album-card">
+
+                    <ul class="album-row">
+                        <li class="album-card">
                             <div class="album-image circle">
                                 <img src="img/youg.jpeg" alt="Young">
                                 <i class="far fa-play-circle"></i>
@@ -213,8 +228,8 @@
                             <div class="sub-cover">
                                 <h3>Lana Del Rey</h3>
                             </div>
-                        </div>
-                        <div class="album-card">
+                        </li>
+                        <li class="album-card">
                             <div class="album-image circle">
                                 <img src="img/einaudi.jpeg" alt="Ludovico Einaudi">
                                 <i class="far fa-play-circle"></i>
@@ -222,10 +237,9 @@
                             <div class="sub-cover">
                                 <h3>Ludovico Einaudi</h3>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                     <!-- /Playlist row: 3 -->
-
                     <!-- /PLAYLIST ROWS -->
                 </div>
                 <!-- /Albums container -->
@@ -250,6 +264,7 @@
         <!-- /Footer's left side -->
 
         <!-- Footer's center side -->
+        <!-- Footer's center side: controls -->
         <div class="control-center">
             <ul class="footer-center-icons">
                 <li><a href=""><i class="fas fa-random"></i></a></li>
@@ -258,6 +273,9 @@
                 <li><a href=""><i class="fas fa-step-forward"></i></a></li>
                 <li><a href=""><i class="fas fa-redo"></i></a></li>
             </ul>
+            <!-- /Footer's center side: controls -->
+
+            <!-- Footer's center side: progress bar -->
             <div class="progress-container bold">
                 <span>0:25</span>
                 <div class="bar">
@@ -267,6 +285,7 @@
                 </div>
                 <span>4:35</span>
             </div>
+            <!-- /Footer's center side: progress bar -->
         </div>
         <!-- /Footer's center side -->
 
