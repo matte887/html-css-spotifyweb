@@ -601,6 +601,10 @@ footer .fa-play-circle:hover {
 }
 
 /* Internal structure: right */
+.control-right ul {
+    display: flex;
+}
+
 .control-right i {
     padding: 0 .5rem;
 }
