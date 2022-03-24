@@ -590,3 +590,8 @@ footer .control-left span {
 .fa-volume-up {
     color: #b8b8b8;
 }
+
+.control-right li:last-child {
+    display: flex;
+    align-items: center;
+}
