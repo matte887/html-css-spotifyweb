@@ -428,6 +428,9 @@ nav a:hover {
 
 .album-image:hover img {
     filter: brightness(30%);
+}
+
+.album-card:hover {
     cursor: pointer;
 }
 
