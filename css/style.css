@@ -25,6 +25,12 @@ html {
     color: white;
 }
 
+@media screen and (max-width: 599px) {
+    html {
+        font-size: 70%;       
+    }
+}
+
 body {
     min-width: 525px;
 }
@@ -305,8 +311,16 @@ header a {
     padding: 1rem 2rem;
     border: 1px solid white;
     border-radius: 30px;
-    margin-right: 3rem;
+    margin-right: 4rem;
     line-height: normal;
+}
+
+@media screen and (max-width: 599px) {
+    header a {
+        font-size: 80%;
+        padding: .8rem 1.6rem;        
+        margin-right: 3rem;        
+    }
 }
 
 header a:hover {
@@ -340,6 +354,12 @@ nav a:hover {
     position: absolute;
     bottom: -8px;
     left: 49px;
+}
+
+@media screen and (max-width: 599px) {
+    #active::after {
+        left: 41px        
+    }
 }
 
 .main-container nav ul li:first-child {
@@ -553,12 +573,6 @@ footer .control-left span {
 
 .footer-center-icons i {
     padding: 0 1rem;
-}
-
-@media screen and (max-width:599px) {
-    .footer-center-icons i {
-        font-size: 1.1rem;
-    }
 }
 
 .fa-play-circle {
