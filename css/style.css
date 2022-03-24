@@ -534,6 +534,7 @@ footer .control-left span {
 }
 
 /* Internal layout: center */
+/* Internal layout: center-top */
 .footer-center-icons {
     display: flex;
     justify-content: center;
@@ -557,6 +558,11 @@ footer .control-left span {
     font-size: 3rem;
 }
 
+.fa-play-circle:hover {
+    transform: scale(120%);
+}
+
+/* Internal layout: center-bottom */
 .progress-container {
     display: flex;
     justify-content: space-between;
