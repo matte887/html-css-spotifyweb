@@ -534,6 +534,12 @@ footer .control-left span {
     padding: 0 .3rem;
 }
 
+.control-left .song-name a:hover,
+.control-left .song-name span:hover {
+    text-decoration: underline;
+    color: white;
+}
+
 /* Internal layout: center */
 /* Internal layout: center-top */
 .footer-center-icons {
