@@ -126,7 +126,7 @@ li {
     margin: 1rem 1rem;
 }
 
-.sidebar #plus {
+#plus::before {
     display: inline-block;
     font-size: 3rem;
     font-weight: 600;
@@ -138,13 +138,14 @@ li {
     height: 30px;
     margin-right: 1rem;
     background-color: #6F6F6F;
+    content: "+";
 }
 
 .sidebar a:hover {
     color: white;
 }
 
-.new-playlist:hover #plus {
+.new-playlist:hover #plus::before {
     background-color: white;
 }
 
